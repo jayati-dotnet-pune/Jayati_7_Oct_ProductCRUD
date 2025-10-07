@@ -1,0 +1,21 @@
+﻿@model List<Jayati_7_October.Models.Product>
+
+<h2>All Products</h2>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.pid</td>
+            <td>@item.pname</td>
+            <td>@item.pprice</td>
+            <td><a href="/Product/DeleteProduct?id=@item.pid">Delete</a></td>
+        </tr>
+    }
+</table>

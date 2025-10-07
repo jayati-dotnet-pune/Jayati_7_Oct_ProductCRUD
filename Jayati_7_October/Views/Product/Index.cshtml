@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Product Index";
+}
+
+<h2>Product Operations</h2>
+
+<ul>
+    <li><a href="/Product/DisplayAllProducts">Display All Products</a></li>
+</ul>
+
+<h3>Display Product By ID</h3>
+<form method="get" action="/Product/DisplayById">
+    <input type="number" name="id" min="1" placeholder="Enter Product ID" required />
+    <button type="submit">Display</button>
+</form>
+
+<h3>Update Product Price</h3>
+<form method="get" action="/Product/UpdateProduct">
+    <input type="number" name="id" min="1" placeholder="Enter Product ID" required />
+    <button type="submit">Update</button>
+</form>
+
+<h3>Delete Product</h3>
+<form method="get" action="/Product/DeleteProduct">
+    <input type="number" name="id" min="1" placeholder="Enter Product ID" required />
+    <button type="submit">Delete</button>
+</form>
+
+<h3>Add New Product</h3>
+<ul>
+    <li><a href="/Product/AddProduct">Add New Product</a></li>
+</ul>

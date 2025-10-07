@@ -1,0 +1,15 @@
+﻿@model Jayati_7_October.Models.Product
+
+<h2>Update Product Price</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="pid" />
+
+    <p><strong>Name:</strong> @Model.pname</p>
+
+    <label>New Price:</label>
+    <input asp-for="pprice" /><br />
+
+    <button type="submit">Update Price</button>
+</form>
+
